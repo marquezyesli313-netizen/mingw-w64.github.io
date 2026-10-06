@@ -1,27 +1,37 @@
-# mingw-w64 Website
+ENCABEZADO'
+#include <stdio.h> // libreria para usar printf (imprimir en pantalla)
+CUERPO DEL PROGRAMA'
+int main() // aqui empieza todo programa en C
+DECLARACION DE VARIABLES'
+Aunque tu flujograma es lineal, declaramos'
+variables por si quieres guardar horas'
+    int hora_inicio = 5; // 5 am
+    int hora_clases = 7; // 7 am
+    int hora_salida = 14; // 2 pm = 14 hrs
+    char nombre[20] = "Estudiante"; // ejemplo de variable texto
 
-This website is written in Markdown and gets built to a static website using
-[zensical](https://zensical.org/). The main branch of this repo is the `source`
-branch and any new commits will auto deploy a new build to the `main` branch
-using [a GitHub action](https://github.com/peaceiris/actions-gh-pages). The
-`main` branch is connected to [GitHub pages](https://pages.github.com) and is
-reachable under https://mingw-w64.github.io and https://www.mingw-w64.org.
-Changes to the `source` branch usually take a minute or two until they are live.
+    // Mensaje de inicio
+    printf("=== MI RUTINA DIARIA - Flujograma Personal ===\n");
+    printf("Estudiante de Ing. Quimica - Pachuca\n\n");
 
-## Development
+    // Cada cuadro de tu flujograma es un printf
+    printf("5:00 am - Me levanto (Inicio)\n");
+    printf("5:15 am - Me bano\n");
+    printf("5:30 am - Me alisto\n");
+    printf("5:40 am - Tiendo mi cama\n");
+    printf("6:00 am - Desayuno\n");
+    printf("6:15 am - Me lavo los dientes\n");
+    printf("6:30 am - Me voy a la UNI\n");
+    printf("7:00 am - Primera clase\n");
+    printf("2:00 pm - Salida de clases\n");
+    printf("2:30 - 3:00 pm - Llegada a mi cuarto\n");
+    printf("3:30 - 4:00 pm - Como\n");
+    printf("4:15 pm - Limpio todo mi cuarto\n");
+    printf("5:20 pm - Realizo todas mis tareas\n");
+    printf("11:00 pm - 5:00 am - Duermo / Fin\n");
 
-For small changes:
+    printf("\n--- Fin del dia. Total: 24 horas ---\n");
 
-* Just use the online editor on GitHub and use the Markdown preview to inspect your changes
-* Open a PR with your changes in case you don't have commit rights
-* **Note:** The Markdown dialect and extensions understood by zensical and GitHub is
-  slightly different, so double check that the deployed website matches what you
-  expected
-* **Note:** Every page on the website has a small "edit" icon in the top right corner which leads you straight to the online editor for that page
+    return 0; // indica que el programa termino bien
 
-For larger changes:
 
-* `uv run zensical serve`
-* Access http://127.0.0.1:8000 - any changes to the sources should be
-  immediately visible in your browser
-* Open a PR with your changes or just push them if you have commit rights
